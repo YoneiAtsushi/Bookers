@@ -5,6 +5,14 @@
 <p>Title</p>
 <span><%= book.title %></span>
 
+<span>
+<%= link_to "show", book_path(book.id) %>
+</span>
+
+<p>Body</p>
+<span><%= book.body %></span>
+
+
 <% end %>
 
 <h2>New book</h2>
