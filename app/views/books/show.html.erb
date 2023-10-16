@@ -2,11 +2,16 @@
     <%= flash[:notice] %>
 </div>
 
-<h4>Title:</h4>
-<p><%= @book.title %></p>
+<p>
+ <strong>Title:</strong>
+ <%= @book.title %>
+</p>
 
-<h4>Body:</h4>
-<p><%= @book.body %></p>
+<p>
+ <strong>Body:</strong>
+ <%= @book.body %>
+</p>
+
 <%= link_to "Edit",edit_book_path(@book.id) %>
 <a href="https://6b65d97dbe02419a8d9513f697afd090.vfs.cloud9.ap-northeast-1.amazonaws.com/books">Back</a>
 
